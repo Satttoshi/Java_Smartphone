@@ -1,5 +1,6 @@
 package org.smartphone;
 
 public interface GPS {
-    int[] getPosition();
+    String getPosition();
+    void setPosition(String position);
 }
