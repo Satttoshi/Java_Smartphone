@@ -13,6 +13,8 @@ public class Main {
 
         Smartphone smartphone = new Smartphone("Mein Phone", "Apple", contacts);
 
+        smartphone.setPosition("Hamburg");
+
         System.out.println(smartphone);
 
     }
