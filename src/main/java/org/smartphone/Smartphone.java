@@ -72,4 +72,14 @@ public class Smartphone implements Radio, GPS {
             ", position='" + position + '\'' +
             '}';
     }
+
+    public void addContact(Contact contact) {
+        Contact[] newContacts = Arrays.copyOf(this.contacts, this.contacts.length + 1);
+        newContacts[newContacts.length - 1] = contact;
+        this.contacts = newContacts;
+    }
+
+    public Contact getContact(int index) {
+        return this.contacts[index];
+    }
 }
