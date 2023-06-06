@@ -8,4 +8,11 @@ abstract class Contact {
     protected Contact(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "Contact{" +
+            "name='" + name + '\'' +
+            '}';
+    }
 }

@@ -14,6 +14,8 @@ public class Friend extends Contact{
 
     @Override
     public String toString() {
-        return "Name: " + getName() + ", Phone number: " + phoneNumber;
+        return "Friend{" +
+            "phoneNumber=" + phoneNumber +
+            "} " + super.toString();
     }
 }
