@@ -1,11 +1,11 @@
 package org.smartphone;
 
 abstract class Contact {
-    private String name;
+    protected String name;
     public String getName() {
         return this.name;
     }
-    public Contact(String name) {
+    protected Contact(String name) {
         this.name = name;
     }
 }
