@@ -22,5 +22,18 @@ public class Main {
         BusinessContact businessContact = new BusinessContact("Enrico", "Project404");
         System.out.println(businessContact);
 
+        System.out.println();
+
+        System.out.println(smartphone.getContact(2));
+
+        System.out.println();
+
+        System.out.println(smartphone.getContact("Enrico"));
+
+        System.out.println();
+
+        smartphone.removeContact("Tas");
+        System.out.println(smartphone);
+
     }
 }

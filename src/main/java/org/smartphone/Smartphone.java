@@ -82,4 +82,25 @@ public class Smartphone implements Radio, GPS {
     public Contact getContact(int index) {
         return this.contacts[index];
     }
+
+    public Contact getContact(String name) {
+        for (Contact contact : this.contacts) {
+            if (contact.getName().equals(name)) {
+                return contact;
+            }
+        }
+        return null;
+    }
+
+    public void removeContact (String name) {
+        Contact[] newContacts = new Contact[this.contacts.length - 1];
+        int index = 0;
+        for (Contact contact : this.contacts) {
+            if (!contact.getName().equals(name)) {
+                newContacts[index] = contact;
+                index++;
+            }
+        }
+        this.contacts = newContacts;
+    }
 }
